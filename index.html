@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>GTA</title>
+</head>
+<body>
+    <p class="name">Lucia</p>
+
+    <img class="personagem" src="./imgs/lucia.png"/>
+
+<div class="text">
+    <p class="etiqueta">Selecione seu Personagem</p>
+    <h1>Não é só <br> um Jogo</h1>
+    <p class="etiqueta2">Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma</p>
+</div>
+
+<div class="menu">
+
+        <img onclick="escolherPersonagem('Lucia', './imgs/lucia.png', '#ff3cac')" class="avatar" src="./imgs/lucia.png"/>
+
+        <img onclick="escolherPersonagem('Jason', './imgs/jason.png', '#00b2c9')" class="avatar" src="./imgs/jason.png"/>
+
+        <img onclick="escolherPersonagem('CJ', './imgs/cj.png', '#7ed37e')" class="avatar" src="./imgs/cj.png"/>
+
+    <label class="voce">📸
+        <input type="file" accept="image/*" hidden onchange="lerFoto(this)" />
+    </label>
+</div>
+
+</body>
+<script src="https://js.puter.com/v2/"></script>
+<script src="./script.js"></script>
+
+</html>
